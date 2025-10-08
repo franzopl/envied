@@ -1,0 +1,26 @@
+endpoints:
+  login: https://api.brasilparalelo.com.br/v1/auth/login
+  metadata: https://hermes.brasilparalelo.com.br/api
+  streams: https://stream.brasilparalelo.com.br/{content_id}/{stream_id}/mpd/stream.mpd
+  widevine_license: https://hermes.brasilparalelo.com.br/api
+
+client:
+  web:
+    user_agent: "Mozilla/5.0 (X11; Linux x86_64; rv:143.0) Gecko/20100101 Firefox/143.0"
+    headers:
+      User-Agent: "Mozilla/5.0 (X11; Linux x86_64; rv:143.0) Gecko/20100101 Firefox/143.0"
+      Accept: "application/graphql-response+json, application/graphql+json, application/json, text/event-stream, multipart/mixed"
+      Referer: "https://plataforma.brasilparalelo.com.br/"
+      Origin: "https://plataforma.brasilparalelo.com.br"
+      Content-Type: "application/json"
+    type: "web"
+  android_tv:
+    user_agent: "Mozilla/5.0 (Linux; Android 10; Smart TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.120 Safari/537.36"
+    headers:
+      User-Agent: "Mozilla/5.0 (Linux; Android 10; Smart TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.120 Safari/537.36"
+      Accept: "application/graphql-response+json, application/graphql+json, application/json, text/event-stream, multipart/mixed"
+      Referer: "https://plataforma.brasilparalelo.com.br/"
+      Origin: "https://plataforma.brasilparalelo.com.br"
+      Content-Type: "application/json"
+    license_user_agent: "ExoPlayer/Widevine"
+    type: "android"
